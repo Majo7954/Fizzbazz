@@ -1,6 +1,9 @@
 function generarFizzBazz(n){
     const FIZZ=3
     const BAZZ=5
+    if (n%FIZZ==0 && n%BAZZ==0){
+        return "FizzBazz";
+    }
     if (n%FIZZ==0){
         return "Fizz";
     }

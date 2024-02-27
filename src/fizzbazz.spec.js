@@ -24,4 +24,12 @@ describe("FizzBazz", () => {
   it("Si es Multiplo de 5 devolver Bazz", () => {
     expect(generarFizzBazz(10)).toEqual("Bazz");
   });
+
+  it("Si es 15 devolver FizzBazz", () => {
+    expect(generarFizzBazz(15)).toEqual("FizzBazz");
+  });
+
+  it("Si es Multiplo de 5 y 3 devolver FizzBazz", () => {
+    expect(generarFizzBazz(15)).toEqual("FizzBazz");
+  });
 });
