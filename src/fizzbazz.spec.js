@@ -20,4 +20,8 @@ describe("FizzBazz", () => {
   it("Si es 5 devolver Bazz", () => {
     expect(generarFizzBazz(5)).toEqual("Bazz");
   });
+
+  it("Si es Multiplo de 5 devolver Bazz", () => {
+    expect(generarFizzBazz(10)).toEqual("Bazz");
+  });
 });

@@ -4,7 +4,7 @@ function generarFizzBazz(n){
     if (n%FIZZ==0){
         return "Fizz";
     }
-    if (n==BAZZ){
+    if (n%BAZZ==0){
         return "Bazz";
     }
     return n+"";
