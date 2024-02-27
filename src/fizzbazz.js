@@ -12,4 +12,13 @@ function generarFizzBazz(n){
     }
     return n+"";
 }
-export default generarFizzBazz;
+
+function generarSecuencia(limite) {
+    let secuencia = "";
+    for (let i = 1; i <= limite; i++) {
+        secuencia += generarFizzBazz(i) + " ";
+    }
+    return secuencia.trim();
+}
+
+export { generarFizzBazz, generarSecuencia };

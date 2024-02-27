@@ -1,15 +1,15 @@
-import generarFizzBazz from "./fizzbazz.js";
-//al terminal un ciclo de TDD(Test Driven Development)
+import { generarFizzBazz, generarSecuencia } from "./fizzbazz.js";
+
 describe("FizzBazz", () => {
   it("Devolver 1", () => {
     expect(generarFizzBazz(1)).toEqual("1");
   });
 
-  it("devolver el numero", () => {
+  it("Devolver el número", () => {
     expect(generarFizzBazz(2)).toEqual("2");
   });
 
-  it("si es igual a 3 devolver Fizz", () => {
+  it("Si es igual a 3 devolver Fizz", () => {
     expect(generarFizzBazz(3)).toEqual("Fizz");
   });
 
@@ -32,4 +32,13 @@ describe("FizzBazz", () => {
   it("Si es Multiplo de 5 y 3 devolver FizzBazz", () => {
     expect(generarFizzBazz(15)).toEqual("FizzBazz");
   });
+
+  it("Generar secuencia hasta 5", () => {
+    expect(generarSecuencia(5)).toEqual("1 2 Fizz 4 Bazz");
+  });
+
+  it("Generar secuencia hasta 15", () => {
+    expect(generarSecuencia(15)).toEqual("1 2 Fizz 4 Bazz Fizz 7 8 Fizz Bazz 11 Fizz 13 14 FizzBazz");
+  });
 });
+
