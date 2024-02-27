@@ -16,4 +16,8 @@ describe("FizzBazz", () => {
   it("Multiplos de 3", () => {
     expect(generarFizzBazz(6)).toEqual("Fizz");
   });
+
+  it("Si es 5 devolver Bazz", () => {
+    expect(generarFizzBazz(5)).toEqual("Bazz");
+  });
 });
